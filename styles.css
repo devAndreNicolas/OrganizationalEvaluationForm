@@ -1,0 +1,108 @@
+body{
+    height: 120vh;
+    margin: 0;
+    background:#013565;
+}
+
+body,header{
+    font-family: Helvetica;
+}
+
+header{
+    margin-top: 60px;
+    text-align: center;
+    border-radius: 8px;
+    color: #dcdede;
+}
+
+#number-label{
+    margin-bottom: 30px;
+}
+
+#improvements-label{
+    margin-top: 30px;
+}
+
+.description-center, .text-title{
+margin-bottom: 30px;
+}
+
+fieldset, .unique-group {
+    width: 60vw;
+    max-width: 600px;
+    min-width: 400px;
+    border: 1px solid #ccc;
+    border-radius: 8px;
+    background: #ffffff;
+    padding-top: 2em;
+    padding-bottom: 2em;
+    margin: 0 auto;
+}
+
+p {
+    font-size: 1.2em;
+    font-weight: bold;
+}
+
+label {
+    display: block;
+    margin: 0.5rem 0;
+    font-weight: bold;
+}
+
+input[type="text"],
+input[type="email"],
+select,
+textarea {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 20px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-sizing: border-box;
+}
+
+input[type="radio"],
+input[type="checkbox"] {
+    margin-right: 10px;
+}
+
+#submit{
+    width: 300px;
+    background-color: white;
+    color: #333;
+    border: 2px solid #333;
+    border-radius: 8px;
+    padding: 10px 20px;
+    margin-top: 20px;
+    margin-left: -95px;
+    font-size: 26px;
+    font-weight: bold;
+    cursor: pointer;
+    transition: all 0.3s ease;
+}
+
+#submit {
+    background-color: #ffffff;
+    border-color: #666;
+}
+
+#submit:hover {
+    background-color: #e0e0e0;
+    border-color: #999;
+}
+
+.form-group-button{
+    width: 100px;
+    margin: 0 auto;
+}
+
+.container{
+    margin-top: 40px;
+}
+
+.unique-group{
+    padding: 20px;
+    height: 15vh;
+    text-align: center;
+}

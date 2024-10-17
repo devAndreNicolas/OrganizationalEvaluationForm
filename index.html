@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+    <title>Organizational Form</title>
+    <link rel="stylesheet" href="styles.css"/>
+</head>
+<body>
+<div class="container">
+    <header class="header">
+        <h1 id="title" class="text-title"> Organizational Evaluation Form </h1>
+        <p id="description" class="description-center"> Thank you for taking the time to take this survey </p>
+    </header>
+    <form id="survey-form" action="submit.html" method="post">
+        <fieldset>
+            <div class="form-group">
+                <label id="name-label" for="name">Name: <input id="name" type="text" name="text"
+                                                               placeholder="Enter your name" required/></label>
+                <label id="email-label" for="email"> Email: <input id="email" type="email" name="email"
+                                                                   placeholder="Enter your email" required/></label>
+                <label id="number-label" for="number"> Age: <input id="number" type="number" min="18" max="100"
+                                                                   name="number" placeholder="Age" required/></label>
+            </div>
+            <div class="form-group">
+                <label id="department-label" for="dropdown"> Department:
+                    <select id="dropdown" name="dropdown">
+                        <option value="Information Technology">Information Technology</option>
+                        <option value="arts">Arts</option>
+                        <option value="sciences">Sciences</option>
+                        <option value="engineering">Engineering</option>
+                        <option value="business">Business</option>
+                    </select>
+                </label>
+            </div>
+            <div class="form-group">
+                <p>How would you rate the overall organization of the university?</p>
+                <label for="excellent-rating">
+                    <input id="excellent-rating" type="radio" name="organization_rating" value="excellent" checked> Excellent
+                </label>
+                <label for="good-rating">
+                    <input id="good-rating" type="radio" name="organization_rating" value="good"> Good
+                </label>
+                <label for="average-rating">
+                    <input id="average-rating" type="radio" name="organization_rating" value="average"> Average
+                </label>
+                <label for="poor-rating">
+                    <input id="poor-rating" type="radio" name="organization_rating" value="poor"> Poor
+                </label>
+            </div>
+            <div class="form-group">
+                <p>Which aspects of the organization do you find satisfactory? (Check all that apply)</p>
+                <label for="communication_aspects">
+                    <input id="communication_aspects" type="checkbox" name="satisfactory_aspects" value="communication" checked> Communication
+                </label>
+                <label for="management_aspects">
+                    <input id="management_aspects" type="checkbox" name="satisfactory_aspects" value="management"> Management
+                </label>
+                <label for="facilities_aspects">
+                    <input id="facilities_aspects" type="checkbox" name="satisfactory_aspects" value="facilities"> Facilities
+                </label>
+                <label for="support_aspects">
+                    <input id="support_aspects" type="checkbox" name="satisfactory_aspects" value="support"> Support
+                </label>
+            </div>
+            <div class="form-group">
+                <label id="improvements-label" for="improvements">Suggestions for Improvement:</label>
+                <textarea id="improvements" name="improvements" rows="4" cols="50" placeholder="Provide your suggestions..."></textarea>
+            </div>
+            <div class="form-group-button">
+                <button id="submit">Submit</button>
+            </div>
+        </fieldset>
+    </form>
+</div>
+</body>
+</html>
